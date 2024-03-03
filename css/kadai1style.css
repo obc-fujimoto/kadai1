@@ -52,13 +52,21 @@ img {
 /* Item
 --------------------------------- */
 .container {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   grid-template-rows: 200px 200px;
+  width: 80%;
+  margin: 0 auto;
 }
 .item {
   background: #0bd;
   color: #fff;
   padding: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.item img {
+    width: 100%;
 }
