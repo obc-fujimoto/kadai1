@@ -24,6 +24,18 @@ img {
 
 /* HEADER
 ------------------------------- */
+
+  
+  /* Layout */
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+  }
+  p {
+    text-align: center;
+    margin-top: 5px;
+  }
 .page-header {
     display: flex;
     justify-content: space-between;
@@ -49,24 +61,46 @@ img {
     color: #0bd;
 }
 
+.object-fit_cover {
+    object-fit: cover
+  }
+/* Image styling */
+.img-box {
+    margin: 2%;
+  }
+  .img-box img {
+    width: 100%;
+    height: 240px;
+    border: 2px solid #ccc;
+    background: #eee;
+  }
+  
+  /* Layout */
+  body {
+    display: block;
+    flex-wrap: wrap;
+    padding: 2%;
+  }
+  p {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
 /* Item
 --------------------------------- */
 .container {
   display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  grid-template-rows: 200px 200px;
+  justify-content: center;
   width: 80%;
+  height: 300px;
   margin: 0 auto;
 }
+
 .item {
   background: #0bd;
   color: #fff;
   padding: 10px;
-  width: 200px;
-  height: 200px;
-}
-
-.item img {
-    width: 100%;
+  width: 80%;
+  height: 300px;
+  margin: 0 2px 0;
 }
